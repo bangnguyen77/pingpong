@@ -3,15 +3,14 @@ $(function() {
     event.preventDefault();
 
     var userNumber = parseInt($("input#number").val());
-    var numberRange = [];
 
     for (i = 1; i <= userNumber; i++) {
       if (userNumber % 3 === 0) {
-        userNumber = ping;
+        document.write('ping');
       } else if (userNumber % 5 === 0){
-        userNumber = pong;
+        document.write('pong');
       } else (userNumber % 15 === 0){
-        userNumber = pingpong
+        document.write('pingpong');
       }
     }
 
