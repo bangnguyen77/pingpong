@@ -1,23 +1,24 @@
-$(function() {
-  $("form#number-input").submit(function(event) {
-    event.preventDefault();
-
-    var userNumber = parseInt($("input#number").val());
+$(document).ready(function() {
+  $("form#numberInput").submit(function(event) {
+    var userNumber = parseInt($("input#userNumber").val());
+    var numberRange = [];
 
     for (var i = 1; i <= userNumber; i++) {
-      if (i % 3 === 0 && i % 5) {
-        document.write('pingpong');
+      numberRange.push(i);
+      if (numberRange[i] % 3 === 0 && numberRange[i] % 5 === 0) {
+        numberRange[i] = 'pingpong';
       } else {
-        if (i % 3 === 0) {
-          document.write('ping');
+        if (numberRange[i] % 5 === 0) {
+          numberRange[i] = 'pong';
           }
-        if (i% 5 === 0) {
-          document.write('pong');
+        if (numberRange[i] % 3 === 0) {
+          numberRange[i] = 'ping';
           }
-        }
-      document.write('<br>');  
+        numberRange.splice(1, 1, "");
+        $("ul.results").append("<li>" + numberRange[i] + "</li>");
+      }
     }
-
+    event.preventDefault();
 
   });
 });
