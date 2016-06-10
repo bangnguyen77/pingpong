@@ -16,30 +16,40 @@
     </div>
 
     <div class="container">
-      <div id="rules">
-        <h1>Let's play!</h1>
-          <h3>Rules:</h3>
-      		<p>Ping Pong will count up to your number from 1 with the following exception:
-            <ol>
-              <li>Numbers divisible by 3 become "ping";</li>
-              <li>Numbers divisible by 5 become "pong";</li>
-              <li>Numbers divisible by 3 and 5 become "pingpong".</li>
-            </ol>
-          </p>
-      </div>
-
-      <div id="results">
-        <form id="numberInput">
-          <div class="form-group">
-            <label for="userNumber">Enter a number:</label>
-            <input id="userNumber" type="number" min="1">
-          </div>
-          <button type="submit" class="btn btn-primary">Let's find out the pattern!</button>
-        </form>
-        <ul class="numbersList">
-
+      <div class="left">
+        <h2>About Ping Pong</h2>
+        <ul>
+          <li>Created by:</li>
+          <li>GitHub Username/URL:</li>
+          <li>Level 1 Test for:</li>
         </ul>
-      </div>
+      </div> <!-- closing div left -->
+
+      <div class="right">
+        <div id="rules">
+          <h1>Let's play!</h1>
+            <h3>Rules:</h3>
+        		<p>Ping Pong will count up to your number from 1 with the following exception:
+              <ol>
+                <li>Numbers divisible by 3 become "ping";</li>
+                <li>Numbers divisible by 5 become "pong";</li>
+                <li>Numbers divisible by 3 and 5 become "pingpong".</li>
+              </ol>
+            </p>
+        </div>
+        <div id="results">
+          <form id="numberInput">
+            <div class="form-group">
+              <label for="userNumber">Enter a number:</label>
+              <input id="userNumber" type="number" min="1">
+            </div>
+            <button type="submit" class="btn btn-primary">Let's find out the pattern!</button>
+          </form>
+          <ul class="numbersList">
+          </ul>
+        </div>
+      </div> <!-- closing div right -->
+
 
     </div> <!-- closing div container -->
 
