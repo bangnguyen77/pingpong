@@ -28,22 +28,22 @@
           </p>
       </div>
 
-      <form id="number">
-        <div class="form-group">
-          <label for="userInput">Please type a number here!</label>
-          <input id="userInput" type="text">
-        </div>
-
-        <button type="submit" class="btn btn-primary">Let's find out!</button>
-      </form>
-
-      <div id="result">
-        <ul>
+      <div id="results">
+        <form id="numberInput">
+          <div class="form-group">
+            <label for="userNumber">Enter a number:</label>
+            <input id="userNumber" type="number" min="1">
+          </div>
+          <button type="submit" class="btn btn-primary">Let's find out the pattern!</button>
+        </form>
+        <ul class="numbersList">
 
         </ul>
       </div>
 
     </div> <!-- closing div container -->
+
+
 
   </body>
 </html>
