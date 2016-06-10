@@ -1,6 +1,6 @@
 .jumbotron {
   background-color: orange;
-  color: green;
+  color: blue;
   text-align: center;
 }
 
@@ -10,12 +10,32 @@
 
 .left {
   float: left;
+  background-color: green;
   border: 1px solid red;
   width: 30%;
+  color: white;
+}
+
+.left h3 {
+  text-align: center;
 }
 
 .right {
   float: right;
+  background-color: #ccbebe;
   border: 1px dashed blue;
   width: 65%;
+  padding: 10px;
+}
+
+.right h1 {
+  text-align: center;
+}
+
+#numberInput {
+  margin-bottom: 10px;
+}
+
+.results {
+  margin-top: 5px
 }
