@@ -3,7 +3,7 @@ $(document).ready(function() {
     var userNumber = parseInt($("input#userNumber").val());
     var numberRange = [];
 
-    for (var i = 1; i <= userNumber; i++) {
+    for ( i = 0; i <= userNumber; i++) {
       numberRange.push(i);
       if (numberRange[i] % 3 === 0 && numberRange[i] % 5 === 0) {
         numberRange[i] = 'pingpong';
@@ -14,7 +14,7 @@ $(document).ready(function() {
         if (numberRange[i] % 3 === 0) {
           numberRange[i] = 'ping';
           }
-        numberRange.splice(1, 1, "");
+        numberRange.splice(0, 1, "");
         $("ul.results").append("<li>" + numberRange[i] + "</li>");
       }
     }
