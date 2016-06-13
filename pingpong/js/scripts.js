@@ -1,26 +1,37 @@
-$(document).ready(function() {
-  $("#numberInput").submit(function(event) {
-
-    event.preventDefault();
-// user interface logic
-    var userNumber = parseInt($("#userNumber").val());
-    var numberRange = [];
 
 // javascript business Logic
-    for ( i = 0; i <= userNumber; i++) {
-      numberRange.push(i);
-      if ( numberRange[i] % 3 === 0 && numberRange[i] % 5 === 0 ) {
-        numberRange[i] = 'pingpong';
-      } else {
-        if (numberRange[i] % 5 === 0) {
-          numberRange[i] = 'pong';
-          }
-        if (numberRange[i] % 3 === 0) {
-          numberRange[i] = 'ping';
-          }
-        numberRange.splice(0, 1, '');
-        $(".results").append("<li>" + numberRange[i] + "</li>");
+
+  var pingPong = function (userNumber) {
+
+    var numberRange = [ ];
+
+    for (var i = 1; i <= userNumber; i++) {
+      if ( i % 15 === 0 ) {
+        numberRange.push('pingpong');
+      } else if (i % 5 === 0) {
+          numberRange.push('pong');
+      } else if (i % 3 === 0) {
+          numberRange.push('ping');
       }
-    }
+        else {
+          numberRange.push(i);
+      }
+    };
+    return numberRange;
+};
+
+$(document).ready(function() {
+  $("form#numberInput").submit(function(event) {
+
+    event.preventDefault();
+    $("ul#pongResults li").remove();
+// user interface logic
+    var userNumber = parseInt($("input#userNumber").val());
+
+    var numberResults = pingPong(userNumber);
+
+    numberResults.forEach(function(result) {
+      $("#pongResults").append("<li>" + result + "</li>");
+    });
   });
 });
