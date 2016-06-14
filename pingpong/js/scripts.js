@@ -1,6 +1,4 @@
-
-// javascript business Logic
-
+// javascript business logic
   var pingPong = function (userNumber) {
 
     var numberRange = [ ];
@@ -12,20 +10,20 @@
           numberRange.push('pong');
       } else if (i % 3 === 0) {
           numberRange.push('ping');
-      }
-        else {
+      } else {
           numberRange.push(i);
       }
     };
     return numberRange;
 };
 
+// user interface logic
 $(document).ready(function() {
   $("form#numberInput").submit(function(event) {
 
     event.preventDefault();
     $("ul#pongResults li").remove();
-// user interface logic
+
     var userNumber = parseInt($("input#userNumber").val());
 
     var numberResults = pingPong(userNumber);
