@@ -5,7 +5,7 @@
 ##### By Bang Nguyen
 
 ## Description:
-This is a webpage that create a little counting game when a user enter a number and from that number the game outputs numbers in certain order.
+This is a webpage that create a little counting game when a user enters a number and from that number the game outputs numbers in certain order.
 
 ## Specification(s):
 Behavior                |  Input        | Output
