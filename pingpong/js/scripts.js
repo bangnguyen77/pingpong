@@ -1,20 +1,20 @@
 // javascript business logic
-  var pingPong = function (userNumber) {
+var pingPong = function (userNumber) {
 
-    var numberRange = [ ];
+  var numberRange = [ ];
 
-    for (var i = 1; i <= userNumber; i++) {
-      if ( i % 15 === 0 ) {
-        numberRange.push('pingpong');
-      } else if (i % 5 === 0) {
-          numberRange.push('pong');
-      } else if (i % 3 === 0) {
-          numberRange.push('ping');
-      } else {
-          numberRange.push(i);
-      }
-    };
-    return numberRange;
+  for (var i = 1; i <= userNumber; i++) {
+    if ( i % 15 === 0 ) {
+      numberRange.push('pingpong');
+    } else if (i % 5 === 0) {
+        numberRange.push('pong');
+    } else if (i % 3 === 0) {
+        numberRange.push('ping');
+    } else {
+        numberRange.push(i);
+    }
+  };
+  return numberRange;
 };
 
 // user interface logic

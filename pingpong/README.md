@@ -21,7 +21,7 @@ The numbers divisible by 3 will become the text "ping";| for loop | "ping"
 
 ## Known Bugs
 
-_No know bugs_
+_No known bugs_
 
 ## Technologies Used
 
