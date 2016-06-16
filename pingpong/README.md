@@ -11,10 +11,9 @@ This is a webpage that create a little counting game when a user enter a number 
 Behavior                |  Input        | Output
 ------------------------| ------------- | -------------
 Create a number field to start at 1 | html form | number count
-The numbers after the user's input and divisible by 15 will become the text "pingpong";             | for loop | 'pingpong'
-The numbers after the user's input and divisible by 5 will become the text "pong";
-| for loop | "pong"
-The numbers after the user's input and divisible by 3 will become the text "ping"; | for loop | "ping"
+The numbers divisible by 15 will become the text "pingpong";| for loop | 'pingpong'
+The numbers divisible by 5 will become the text "pong";| for loop | "pong"
+The numbers divisible by 3 will become the text "ping";| for loop | "ping"
 
 ## Setup/Installation Requirements
 
