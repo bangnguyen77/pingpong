@@ -14,7 +14,6 @@ var pingPong = function (userNumber) {
   };
   return numberRange;
 };
-
 // user interface logic
 $(document).ready(function() {
   $("form#numberInput").submit(function(event) {
